@@ -22,6 +22,7 @@ const App = () => {
 
  return (
   <div>
+   <h1>Alan Ai News</h1>
    <NewsCards articles={newsArticles} />
   </div>
  );
