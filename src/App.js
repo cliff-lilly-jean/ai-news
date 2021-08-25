@@ -13,12 +13,18 @@ const App = () => {
  const classes = useStyles();
  const [newsArticles, setNewsArticles] = useState([]);
 
+ // Index of article currently being read
+ const [activeArticle, setActiveArticle] = useState(-1);
+
  useEffect(() => {
   alanBtn({
    key: alanKey,
    onCommand: ({ command, articles }) => {
     if (command === 'newHeadlines') {
      setNewsArticles(articles);
+     setNewsArticles(-1);
+    } else if (command === 'highlight') {
+     setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
     }
    }
   });
@@ -29,7 +35,7 @@ const App = () => {
    <div className={classes.logoContainer}>
     <img className={classes.alanLogo} src={logo} alt="Alan Studio Logo" />
    </div>
-   <NewsCards articles={newsArticles} />
+   <NewsCards articles={newsArticles} activeArticle={activeArticle} />
   </div>
  );
 };
