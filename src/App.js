@@ -3,7 +3,6 @@ import { Typography } from '@material-ui/core';
 import wordsToNumbers from 'words-to-numbers';
 import alanBtn from '@alan-ai/alan-sdk-web';
 
-import logo from './assets/alan_logo.jpeg';
 import { NewsCards, Modal } from './components';
 import useStyles from './styles';
 
@@ -44,7 +43,7 @@ const App = () => {
 
  return (
   <div>
-   <h1 className="title">Alan AI</h1>
+   <h1 className="title">What's <span className="primary-color bigger">News</span> Alan?</h1>
    <div className={classes.logoContainer}>
     {newsArticles.length ? (
      <div className={classes.infoContainer}>
