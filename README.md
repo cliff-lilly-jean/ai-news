@@ -27,7 +27,7 @@
     <img src="images/ai.jpeg" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center">What's News Alan?</h3>
+  <h1 align="center"><a href="https://whats-news-alan.netlify.app" target="_blank">What's News Alan?</a></h1>
 
   <!-- <p align="center">
     An awesome README template to jumpstart your projects!
